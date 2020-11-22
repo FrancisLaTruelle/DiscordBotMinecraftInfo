@@ -20,10 +20,6 @@ client.on('message', message => {
 
             if (body) {
                 if (body.online === true) {
-                    const imageStream = new Buffer(body.icon, 'base64');
-                    const attachment = new MessageAttachment(imageStream);
-
-
                     const embed = new Discord.MessageEmbed()
                         .setColor('GREEN')
                         .setTitle(args[1])
@@ -32,7 +28,6 @@ client.on('message', message => {
                         .addField('Players', body.players.online + "/" + body.players.max, false)
                         .addField('Version', body.version, true)
                         .addField('MOTD', "```" + body.motd.clean[0] + "\n" + body.motd.clean[1] + "```", false)
-                        .setThumbnail(attachment)
                         .setTimestamp()
                     message.channel.send(embed)
                 } else {
@@ -47,7 +42,5 @@ client.on('message', message => {
         })
     }
 })
-
-
 
 client.login('NzgwMTIzMTU1NzI4NTY0MjI1.X7qgTg.ZLz-lPsUAJZkk90s9o9XRxTpdLQ');
