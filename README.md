@@ -10,4 +10,4 @@ A very simple Discord bot to get information on a minecraft server with its ip
 ### To do
 
 - [x] Create an embed instead of a simple message
-- [] Use the icon in base64 and integrate it into the embed
+- [ ] Use the icon in base64 and integrate it into the embed
