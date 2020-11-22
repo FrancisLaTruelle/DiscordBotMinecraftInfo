@@ -1,0 +1,17 @@
+{
+  "name": "betterblock",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "keywords": [],
+  "author": "FrancisLaTruelle",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.0.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "description": ""
+}
