@@ -9,7 +9,7 @@ client.on('message', message => {
 
         if (!args[1]) return message.channel.send(`You forgot the ip !`)
 
-        const url = "https://api.mcsrvstat.us/2/" + args[1] 
+        const url = "https://api.mcsrvstat.us/2/" + args[1]
 	    request(url, function(err, response, body) {
             if (err) {
                 console.log(err);
@@ -43,4 +43,4 @@ client.on('message', message => {
     }
 })
 
-client.login('NzgwMTIzMTU1NzI4NTY0MjI1.X7qgTg.ZLz-lPsUAJZkk90s9o9XRxTpdLQ');
+client.login('YOUR TOKEN HERE');
